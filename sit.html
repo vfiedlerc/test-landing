@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+      <meta charset="utf-8">
+      <title>Welcome</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="shortcut icon" href="img/logo.png">
+        <!-- google font css-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <!-- bootstraf css-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+      <!-- library and main css-->
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <!--=========================your site content here =====================-->
+<!--==========navber start==========-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sit.html">SIT AMET MESSA VITAE</a></li>
+                    <li><a href="commodo.html">COMMODO</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+<!----======content Start======----->
+<section class="tow-main">
+  <div class="container">
+
+    <div class="row"><!---------Image row 1-------->
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <div class="main-box">
+          <div class="circle"><img src="img/man1.png" width="100%"></div>
+          <h4>Petter Stsjkin</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div><br><br><br>
+    <div class="row"><!---------Image row 2-------->
+      <div class="col-md-4"></div>
+      <div class="col-md-6">
+        <div class="main-box">
+          <div class="circle"><img src="img/man2.png" width="100%"></div>
+          <h4>Petter Stsjkin</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div><br><br><br>
+    <div class="row"><!---------Image row 3-------->
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <div class="main-box">
+          <div class="circle"><img src="img/man3.png" width="100%"></div>
+          <h4>Petter Stsjkin</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    
+  </div>
+</section>
+
+<div class="fixed-btn">
+    <p>Lorem</p>
+</div>
+    
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+      $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+    </script>
+<!--==========Section start==========-->
+<!--==========Section start==========-->
+<!--==========Section start==========-->
+<!--==========Section start==========-->
+<!--==========Section start==========-->
+<!--==========Section start==========-->
+        <!--=========================your site content End =====================-->
+        <!--++++++++ your site Javascript hare ++++++++-->
+        <script type="text/javascript">
+          
+        </script>
+        <!--++++++++ your site Javascript hare ++++++++-->
+   <!-- Jquary library file -->
+  <script src="js/jquery.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!--font-awesome cdn Jquary-->
+  <script src="https://kit.fontawesome.com/6e4214a137.js" crossorigin="anonymous"></script>
+  <!-- Bootstraf cdn JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
